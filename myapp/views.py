@@ -16,6 +16,5 @@ def hello3(request, username):
 def hello4(request, username):
 	now = datetime.now()
 	return render(request, "hello4.html", locals())
-
-def index(request):
-	return render(request, "index.html", locals())
+def namecard(request):
+	return render(request, "namecard.html", locals())

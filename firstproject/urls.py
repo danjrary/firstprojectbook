@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from myapp.views import sayhello, hello2, hello3, hello4
+from myapp.views import sayhello, hello2, hello3, hello4, namecard
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -24,4 +24,5 @@ urlpatterns = [
     url(r'^hello2/(\w+)/$', hello2),
     url(r'^hello3/(\w+)/$', hello3),
     url(r'^hello4/(\w+)/$', hello4),
+    url(r'^namecard/$', namecard),
 ]
