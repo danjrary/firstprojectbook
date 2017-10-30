@@ -23,5 +23,5 @@ urlpatterns = [
     url(r'^hello/$', sayhello),
     url(r'^hello2/(\w+)/$', hello2),
     url(r'^hello3/(\w+)/$', hello3),
-    url(r'^hello3/(\w+)/$', hello4),
+    url(r'^hello4/(\w+)/$', hello4),
 ]
