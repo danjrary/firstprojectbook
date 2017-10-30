@@ -18,3 +18,6 @@ def hello4(request, username):
 	return render(request, "hello4.html", locals())
 def namecard(request):
 	return render(request, "namecard.html", locals())
+
+def weatherbox(request):
+	return render(request, "weatherbox.html", locals())
