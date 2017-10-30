@@ -1,142 +1,88 @@
-@charset "UTF-8";
-* {
+*{
+/*   border: solid 1px black; */
   font-family: 微軟正黑體;
+  position: relative;
+}
+html, body{
+  width:100%; height:100%;
+  padding: 0px; margin: 0px;
+  
+}
+
+body{
+  background-color: #d1d1d1;
+  border-top: solid 20px #f24;
+  border-bottom: solid 20px #f24;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.namecard{
+  width: 350px; height:200px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  background-color: #eee;
+  
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: #666;
+    
+  overflow: hidden;
+  border: solid 1px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  box-shadow: 0px 0px 15px  rgba(0,0,0,0.2)
+}
+
+.circle{
+  width: 100px; height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  right: 100px
+}
+
+.circle1{
+  right: 100px;
+  background-color: #f24;
+}
+.circle2{
+  width: 60px; height: 60px;
+  right: -30px;
+  top: -30px;
+  border: solid 3px #f24;
+}
+
+.namecard h2{
+  font-size: 25px;
+  font-weight: 900;;
+}
+.namecard h2 span{
+  font-size: 12px;
+}
+.namecard h5{
+  color: #f24;
+  font-weight: 100;
+}
+
+.namecard p{
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.page_title{
+  text-align: center;
+  color: #555;
+  font-weight: 500;
+}
+.mark{
+  font-size: 300px;
+  position: absolute;
+  bottom: 100px;
+  font-weight: 100;
+  color: rgba(0,0,0,0.035);
 }
 
 .info{
   color: red;
-}
-
-body {
-  height: 1000px;
-}
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: 900;
-}
-
-nav.navbar {
-  transition-duration: 0.5s;
-}
-
-nav.navbar.navbar-default.navbar-fixed-top.navbar-top {
-  background-color: transparent;
-}
-nav.navbar.navbar-default.navbar-fixed-top.navbar-top a {
-  color: white;
-  transition-duration: 0.5s;
-}
-nav.navbar.navbar-default.navbar-fixed-top.navbar-top a:hover {
-  color: #ff6e3e;
-}
-
-header.jumbotron {
-  text-align: center;
-  background-image: url(https://aomiwang.com/sites/default/files/styles/zdy/public/field/image/0D6PSZ0h.jpeg?itok=vWPLVsBs);
-  background-size: cover;
-  background-attachment: fixed;
-  margin-bottom: 0px;
-}
-header.jumbotron .container {
-  color: white;
-  padding: 200px 0px;
-}
-header.jumbotron hr {
-  max-width: 50px;
-  border: 2px solid #ff6e3e;
-}
-header.jumbotron h4 {
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 500;
-}
-
-section {
-  padding: 50px 0px;
-}
-
-section#section_ask {
-  background-color: #ff6e3e;
-}
-section#section_ask .col-sm-5.img {
-  background-image: url(http://minioasis.github.io/contents/images/2016/05/gutenbergs_apprentice.jpg);
-  height: 350px;
-  mix-blend-mode: multiply;
-}
-section#section_ask h2 {
-  margin-top: 130px;
-  padding: 0px 20px;
-}
-
-section#section_about img {
-  width: 120%;
-}
-section#section_about .img_wrap {
-  height: 220px;
-  overflow: hidden;
-}
-
-section#section_story {
-  background-color: #222;
-  color: white;
-  padding: 0;
-}
-section#section_story .col-sm-5 {
-  background-image: url(http://lpe-group.com/wp-content/themes/invicta/styles/images/maps/europe-map.png);
-  background-size: 100% auto;
-  height: 400px;
-}
-section#section_story .col-sm-5 .cross {
-  position: absolute;
-  left: 23%;
-  top: 40%;
-  color: red;
-  font-size: 30px;
-  font-weight: 900;
-}
-section#section_story .col-sm-7 {
-  text-align: center;
-}
-section#section_story .col-sm-7 i {
-  font-size: 40px;
-}
-section#section_story .col-sm-7 .features {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-section#section_future img {
-  width: 100%;
-}
-section#section_future i {
-  font-size: 30px;
-}
-section#section_future .future {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-footer.jumbotron {
-  text-align: center;
-  background-image: url(https://aomiwang.com/sites/default/files/styles/zdy/public/field/image/0D6PSZ0h.jpeg?itok=vWPLVsBs);
-  background-size: cover;
-  background-attachment: fixed;
-  margin-bottom: 0px;
-}
-footer.jumbotron .container {
-  color: white;
-  padding: 60px 0px;
-}
-footer.jumbotron hr {
-  max-width: 50px;
-  border: 2px solid #ff6e3e;
-}
-footer.jumbotron h4 {
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 500;
-}
-footer.jumbotron input {
-  background-color: transparent;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
 }

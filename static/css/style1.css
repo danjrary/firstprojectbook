@@ -79,6 +79,10 @@ body{
   font-size: 300px;
   position: absolute;
   bottom: 100px;
-  fnot-weight: 100;
+  font-weight: 100;
   color: rgba(0,0,0,0.035);
+}
+
+.info{
+  color: red;
 }
