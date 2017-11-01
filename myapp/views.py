@@ -21,3 +21,6 @@ def namecard(request):
 
 def weatherbox(request):
 	return render(request, "weatherbox.html", locals())
+
+def brand(request):
+	return render(request, "brand.html", locals())
