@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>CodePen - 貓動畫 - mousemove</title>
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static "css/catanimate.css"%}">
+  
+  
+ </head>
+
+<body translate="no" >
+
+  <img id="cat" src="http://awiclass.monoame.com/catpic/cat_lefttop.png" alt=""/>
+<div id="cross"></div>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script >
+    $(window).mousemove(function(evt){
+  var x = evt.pageX
+  var y = evt.pageY
+  // console.log(x + "," + y) 
+  // 用console檢測是否有抓到數值
+  $("#cross").css("left",x+"px")
+  $("#cross").css("top", y+"px")
+  
+  if (x < $(window).width()/2 - 50){
+    $("#cat").attr("src", "http://awiclass.monoame.com/catpic/cat_left.png")
+  }
+    
+  if (x > $(window).width()/2 + 50){
+    $("#cat").attr("src", "http://awiclass.monoame.com/catpic/cat_right.png")
+  }
+  
+  if ( Math.abs(x - $(window).width()/2 )< 50){     $("#cat").attr("src","http://awiclass.monoame.com/catpic/cat_top.png")
+  }
+  
+  if (x< $(window).width()/2 -50 && y < $(window).height()/2){
+    $("#cat").attr("src", "http://awiclass.monoame.com/catpic/cat_lefttop.png")
+  }
+  
+  if (x > $(window).width()/2 +50 && y < $(window).height()/2){
+    $("#cat").attr("src", "http://awiclass.monoame.com/catpic/cat_righttop.png")
+  }
+  
+})
+  </script>
+
+</body>
+</html>
