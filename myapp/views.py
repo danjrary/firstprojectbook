@@ -24,3 +24,6 @@ def weatherbox(request):
 
 def brand(request):
 	return render(request, "brand.html", locals())
+
+def catanimate(request):
+	return render(request, "catanimate.html", locals())
